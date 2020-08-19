@@ -1,0 +1,80 @@
+.container 
+    min-max(320px, 100%, 0)
+
+
+.wrap 
+    min-max(320px, 1160px, 10px)
+
+
+li 
+    margin 0
+
+
+ul 
+    padding 0
+
+    
+body
+    font-family "Cera Pro Regular", Helvetica, sans-serif
+    font-size 14px
+    font-weight 400 
+    line-height 22px
+    background-color bg
+    overflow-wrap break-word
+    word-wrap break-word
+    max-width 1920px
+    margin 0 auto
+    color light-black
+
+h1, h2, h3, p
+    margin 0
+
+.active-link
+    opacity 
+    
+.button
+    button(white)
+
+.title-small
+    font-size 14px
+    font-weight 600 
+    line-height 22px
+    letter-spacing 0.03em
+    color light-black
+
+.text
+    font-size 14px
+    font-weight 400 
+    line-height 22px
+    color light-black
+    opacity .5
+
+.title-1
+    font 82px/87px 'Cera Pro Medium', sans-serif
+    color white
+
+.title-2
+    font 65px/1 'Cera Pro Medium', sans-serif
+    color white
+    position relative
+    &__num
+        position absolute
+        top -35px
+        left 0
+        color red
+        font 18px/1 'Cera Pro Bold', sans-serif
+        transform rotate(-90deg)
+        &::before
+            content ''
+            width 98px
+            height 2px
+            background red
+            position absolute
+            top 8px
+            left 30px
+
+.btn-with-arrow-simple
+    button-arrow-simple(white, red)
+
+.btn-with-arrow
+    button-arrow(white, #333335)

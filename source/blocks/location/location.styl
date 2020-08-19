@@ -1,0 +1,104 @@
+.location
+    &__wrap
+        padding 170px 0 182px
+        width 100%
+    &__top
+        display flex
+        justify-content space-between
+    &__title
+        position relative
+        margin-top 15px
+        &::after
+            position absolute
+            content url(../../assets/images/contacts-lines.svg)
+            top -75%
+            left -160px
+            width 475px
+            height 533px
+            z-index -5
+    &__img
+        position relative
+        margin-left 130px
+        span
+            font 60px/1 'Cera Pro Regular', sans-serif
+        &::before
+            content ''
+            height 1502px
+            width 2px
+            background #fff
+            opacity 0.1
+            position absolute
+            right -170px
+            top -630px
+            transform rotate(24deg)
+            z-index -10
+        &::after
+            position absolute
+            content url(../../assets/images/red-seven.svg)
+            top -20px
+            left 480px
+            height 700px
+            width 93px
+    &__circle
+        position absolute
+        left 50%
+        transform translateX(-50%)
+        top 57px
+        background-color white
+        display flex
+        justify-content center
+        align-items center
+        width 220px
+        height 220px
+        border-radius 50%
+    &__main
+        display flex
+    &__advs
+        display flex
+        flex-direction column
+    &__subtitle
+        margin 0
+        font 32px/36px 'Cera Pro Bold', sans-serif
+        color white
+        margin-bottom 18px
+    &__btn
+        max-width 330px
+        margin-top 60px
+        position relative
+        &::before
+            content url(../../assets/images/line-to-pin.png)
+            height 1502px
+            width 2px
+            top -63%
+            right -28px
+            position absolute
+            z-index -10
+    &__elem
+        display grid
+        grid-template-columns 1.2fr 3fr
+        max-width 485px
+        margin-bottom 50px
+        p
+            font 18px/26px 'Cera Pro Regular', sans-serif
+            color white
+        &:first-child
+            .location__subtitle
+                margin-top 38px
+            img
+                height 105px
+                width 95px
+.quote
+    max-width 560px
+    p
+        font 25px/38px 'Cera Pro Medium', sans-serif
+        color white
+        margin 7px 0 14px
+    &__autor
+        margin-top 30px
+        display inline-block
+        font 15px/1 'Cera Pro Regular', sans-serif
+        text-transform uppercase
+        letter-spacing 1.8px
+        margin-bottom 80px
+        color white
+

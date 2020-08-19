@@ -1,0 +1,24 @@
+.interiors
+    background-color dark-bg
+    padding-top 202px
+    padding-bottom 50px
+    &__title
+        font-size 60px
+        width 465px
+        position relative
+        z-index 10
+    &__quote
+        max-width 660px !important
+    &__main
+        display flex
+        justify-content space-between
+        position relative
+        &::after
+            position absolute
+            content url(../../assets/images/contacts-lines.svg)
+            top 0
+            left -160px
+            width 435px
+            height 533px
+            z-index 0
+            opacity .1

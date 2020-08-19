@@ -1,0 +1,115 @@
+min-max(min-width, max-width, padding) 
+  min-width: min-width
+  max-width: max-width
+  padding: 0 padding
+  box-sizing: border-box
+  margin: 0 auto
+
+
+title-1(color)
+  font-family: "Raleway", Helvetica, sans-serif
+  font-weight: 400
+  line-height: 42px
+  font-size: 36px
+  text-transform: uppercase
+  color: color
+
+title-2(color)
+  font-family: "Open Sans", Helvetica, sans-serif
+  font-weight: 800
+  font-size: 20px
+  color: color
+
+text(color)
+  font-family: "Open Sans", Helvetica, sans-serif
+  font-weight: 400
+  font-size: 14px
+  color: color
+
+button(color)
+  font 20px/1 'Cera Pro Bold', sans-serif;
+  letter-spacing 0.03em
+  color white
+  height 80px
+  padding 0 18px 1px 18px
+  min-width 330px
+  background-color color
+  cursor pointer
+  text-align center
+  display block
+  box-shadow none
+  appearance none
+  border none
+  transition all 0.2s
+
+button-arrow-simple(color, bg)
+  font 20px/1 'Cera Pro Bold', sans-serif;
+  letter-spacing 0.03em
+  color color
+  height 80px
+  padding 0 18px 1px 18px
+  min-width 330px
+  background-color bg
+  cursor pointer
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+  box-shadow none
+  appearance none
+  border none
+  transition all 0.2s
+  span 
+    width 19px
+    height 19px
+    background-color white
+    display flex
+    justify-content center
+    align-items center
+    margin-left 10px
+    i 
+      width 50%
+      height 50%
+      background url(../../assets/images/arrow-right-black.png) no-repeat
+
+button-arrow(color, bg)
+  font 20px/1 'Cera Pro Bold', sans-serif;
+  letter-spacing 0.03em
+  color color
+  height 80px
+  padding 0 18px 1px 18px
+  min-width 330px
+  background-color bg
+  cursor pointer
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+  box-shadow none
+  appearance none
+  border none
+  transition all 0.3s ease-in-out
+  &:hover
+    background-color red
+    color white
+    span
+      background-color white
+    i
+      background url(../../assets/images/arrow-right-black.png) no-repeat
+      margin-left 2px
+  span 
+    width 19px
+    height 19px
+    background-color red
+    display flex
+    justify-content center
+    align-items center
+    margin-left 10px
+    transition all 0.3s ease-in-out
+    i 
+      width 50%
+      height 50%
+      background url(../../assets/images/arrow-right.png) no-repeat
+      transition all 0.3s ease-in-out
+      margin-left 2px
+

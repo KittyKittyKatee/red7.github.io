@@ -1,0 +1,68 @@
+.header
+    position absolute
+    top 0
+    left 0
+    width 100%
+    z-index 10
+    &__wrap
+        display flex
+        justify-content space-between
+    &__logo
+        width 195px
+        height 273px
+        img
+            width 195px
+            height 273px
+    &__menu 
+        list-style: none
+        display: flex
+        margin-right 6.8em
+    &__main
+        display flex
+        align-items center
+        height 175px
+        margin-right 60px
+    &__elem
+        margin-right 50px
+        &:last-child 
+            margin-right 0
+    &__link
+        text-decoration none
+        font 20px/24px 'Cera Pro Bold', sans-serif;
+        color white
+        transition all 0.3s ease-in-out
+        &:hover, &:active
+            color red
+            transform translate(-2px, 2px)
+    &__call
+        display flex
+        flex-direction column
+        align-items flex-end
+    &__phone
+        font 30px/1 'Cera Pro Bold', sans-serif;
+        color white
+        margin-bottom 8px
+        text-decoration none
+    &__button-call
+        text-decoration none
+        font 13px/1 'Cera Pro Bold', sans-serif;
+        color white
+        background-color red
+        text-transform uppercase
+        padding 2px 4px
+        letter-spacing 1px
+    &__burger 
+        display flex
+        flex-direction column
+        justify-content space-between
+        cursor pointer
+        span
+            width 20px
+            height 2px
+            background black
+            margin-bottom 3px
+            transition all 0.2s
+        &:hover, &:active
+            opacity .5
+    &__button
+        margin-right 30px

@@ -1,0 +1,46 @@
+mixin apartments()
+    .apartments
+        .apartments__wrap.wrap
+            h2.apartments__title.title-2 Апартаменты
+                span.title-2__num 03
+            p.apartments__text Площадь апартаментов варьируется от от 27 м2 до 253 м2. <br> Возможно расширение площади за счет объединения соседних апартаментов.
+            .apartments__main
+                .apartments__tabs.tabs
+                    .tabs__tab.active(id = "tab-1") студии
+                    .tabs__tab(id = "tab-2") 2 комнатные
+                    .tabs__tab(id = "tab-3") 3 комнатные
+                    .tabs__tab(id = "tab-4") 4 комнатные
+                .apartments__slider
+                    .apartments__arrow
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
+                            <g data-name="Слой 2">
+                                <g data-name="Слой 1">
+                                    <rect class="cls-1" width="100" fill="#fff" height="100"></rect>
+                                    <path d="M45.48,42.25a.77.77,0,0,1,1.1,0,.77.77,0,0,1,0,1.08l-5.91,5.9H61.21A.76.76,0,0,1,62,50a.77.77,0,0,1-.77.78H40.67l5.91,5.89a.77.77,0,1,1-1.1,1.09l-7.23-7.21a.75.75,0,0,1,0-1.08Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    .apartments__slide
+                        .apartments__content
+                            .apartments__info
+                                .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                .apartments__row Дизайнерская отделка
+                                    ul
+                                        li - Современный стиль
+                                        li - Неоклассический стиль
+                            button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                        .apartments__img
+                            img(src = "../assets/images/1.png")
+                    .apartments__arrow
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
+                            <g data-name="Слой 2">
+                                <g data-name="Слой 1">
+                                    <rect class="cls-1" width="100" height="100" fill="#fff" transform="translate(100 100) rotate(-180)"></rect>
+                                    <path d="M61.75,49.46a.75.75,0,0,1,0,1.08l-7.23,7.21a.77.77,0,0,1-1.1-1.09l5.91-5.89H38.79A.77.77,0,0,1,38,50a.76.76,0,0,1,.77-.76H59.33l-5.91-5.9a.77.77,0,0,1,0-1.08.77.77,0,0,1,1.1,0Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+
