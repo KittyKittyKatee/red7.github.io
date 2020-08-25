@@ -3,9 +3,9 @@
         position relative
         height 772px
         overflow hidden
-        >img
-            position absolute
-            top 0
+    &__wrap
+        position absolute
+        top 0
     &__counter
         display flex
         aligh-items flex-start
@@ -14,14 +14,15 @@
             color white
             font 50px/1 'Cera Pro Bold', sans-serif
             letter-spacing 0.1em
+            width 85px
         &--small
             color white
-            font 22px/1 'Cera Pro Medium', sans-serif
+            font 21px/1 'Cera Pro Medium', sans-serif
             margin-top 8px
             letter-spacing 0.8em
     &__text
         color white
-        font 22px/26px 'Cera Pro Medium', sans-serif
+        font 20px/26px 'Cera Pro Medium', sans-serif
     &__info
         background-color red
         width 456px
@@ -33,6 +34,16 @@
         flex-direction column
         padding 30px 40px 0
         box-sizing border-box
+        @media (max-width 800px)
+            position absolute
+            top 0
+            left 0
+
+            margin 0
+        @media(max-width 460px)
+            width 100%
+            height auto
+            padding-bottom 40px
         &::before
             content ''
             position absolute
@@ -52,10 +63,15 @@
     &__content
         height 772px
         max-width 1610px
+        width 100%
         padding 0 10px
         margin 0 auto
         display grid
         grid-template-columns 100px 1fr 100px
+        position absolute
+        top 0
+        left 50%
+        transform translateX(-50%)
     &__arrow
         align-self center
         display flex
@@ -82,6 +98,13 @@
             width 100px
             rect, path  
                 transition all 0.2s ease-in-out
+        @media(max-width 800px)
+            position absolute
+            bottom 15px
+            left 15px
+            &:last-child
+                right 20px
+                left auto
 
 .benefits
     height 772px

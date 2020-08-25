@@ -13,11 +13,14 @@ include ../blocks/infrastructure/infrastructure.pug
 include ../blocks/security/security.pug
 include ../blocks/offer/offer.pug
 include ../blocks/contacts/contacts.pug
+include ../blocks/modal/modal.pug
 
 block title
     title RED7
 
 block pagecontent
+    +modal()
+
     +header()
 
     +banner()
@@ -40,7 +43,7 @@ block pagecontent
 
     +offer()
 
-    +contacts()
+    //- +contacts()
 
     //- +advantages()
 

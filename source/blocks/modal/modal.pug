@@ -1,0 +1,18 @@
+mixin modal()
+    .modal
+        .modal__wrap.wrap
+            button.modal__close
+                <svg class="svg-icon close" xmlns="http://www.w3.org/2000/svg" width="16.9" height="16.9" viewBox="0 0 16.9 16.9">
+                    <polygon points="16.9,2.3 14.6,0 8.4,6.2 2.3,0 0,2.3 6.2,8.4 0,14.6 2.3,16.9 8.4,10.7 8.4,10.7 8.5,10.7 14.6,16.9 16.9,14.6 10.7,8.4 "></polygon>
+                </svg>
+            h2.modal__title Закажите звонок
+            p.modal__text Наш менеджер свяжется с вами в ближайшее время
+            form(method="POST" id="modal__form").modal__form
+                input(name="name" type="text" placeholder="Ваше имя" )
+                input(id="tel" name="tel" placeholder="Ваш телефон" type="text")
+                button.modal__btn.btn-big(type="submit") Позвоните мне
+                .modal__agree <span class="offer__checkbox"><img/></span> Нажимая кнопку <span class="modal__modal-name"> "ПОЗВОНИТЕ МНЕ" </span>, я даю своё согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 года №152‑ФЗ "О персональных данных", на условиях и для целей, определённых в Согласии на обработку персональных данных.
+        .modal__bg
+                    
+
+

@@ -12,10 +12,12 @@ mixin offer()
                     .offer__input-container
                         .offer__input
                             .offer__input-slider
-                                input(type="text" placeholder="Укажите ваш телефон")
-                                //- input(type="text" placeholder="Укажите ваш телефон")
-                                //- button.offer__btn Позвоните мне
-                            span: img(src="../assets/images/arrow-form.svg")
+                                form.offer__input-wrap
+                                    input(type="text" name="name-2" placeholder="Укажите ваше имя")
+                                    input(type="text" name='tel-2' id='tel-2' placeholder="Укажите ваш телефон")
+                                    button(type="submit").offer__btn Позвоните мне
+                                span Спасибо! <br> Наш менеджер скоро с Вами свяжется
+                            span.offer-submit: img(src="../assets/images/arrow-form.svg")
                     span.offer__count <span class="offer__current">1 </span>  /  3
                     .offer__agree <span class="offer__checkbox"><img/></span> Даю своё согласие на обработку моих персональных данных
                     

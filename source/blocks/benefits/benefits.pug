@@ -1,11 +1,19 @@
 mixin benefits()
     .benefits
         .benefits__wrap
-            .benefits__main.slider
+            .benefits__slider.slider
                 .slider__slide
-                    img(src="../assets/images/slider_2-1.jpg")
+                    .slider__imgs
+                        .slider__img
+                            img(src="../assets/images/slider_2-1.jpg")
+                        .slider__img
+                            img(src="../assets/images/slider_2-1.jpg")
+                        .slider__img
+                            img(src="../assets/images/slider_2-1.jpg")
+                        .slider__img
+                            img(src="../assets/images/slider_2-1.jpg")
                     .slider__content
-                        .slider__arrow
+                        .slider__arrow.slider__arrow--prev
                             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
                                 <g data-name="Слой 2">
                                     <g data-name="Слой 1">
@@ -15,9 +23,9 @@ mixin benefits()
                                 </g>
                             </svg>
                         .slider__info
-                            span.slider__counter <font class="slider__counter--large"> 01 </font> <font class="slider__counter--small"> /4 </font>
-                            p.slider__text RED7 - новые «Красные ворота», открывающие дорогу к центру Москвы.
-                        .slider__arrow
+                            span.slider__counter <font class="slider__counter--large"> </font> <font class="slider__counter--small"></font>
+                            p.slider__text
+                        .slider__arrow.slider__arrow--next
                             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
                                 <g data-name="Слой 2">
                                     <g data-name="Слой 1">

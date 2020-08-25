@@ -4,11 +4,19 @@
     padding 286px 0 96px
     &__title
         margin-bottom 30px
+        @media(max-width 520px)
+            font-size 40px
     &__text
         font 400 28px/34px 'Cera Pro Regular', sans-serif
         margin-bottom 66px
         color white
         max-width 580px
+    &__btn
+        button(red)
+        @media (max-width 420px)
+           min-width auto
+           padding-left 35px
+           padding-right 35px
     &__form
         background-color white
         padding 60px 90px 72px
@@ -17,10 +25,16 @@
         display grid
         grid-template-columns 1fr 1fr
         align-items center
+        grid-gap 20px
+        @media (max-width 850px)
+            padding 50px 40px 60px
+        @media (max-width 700px)
+            grid-template-columns 1fr
         p
             margin 0
             font 20px/25px 'Cera Pro Medium', sans-serif
             color light-gray
+    
     &__subtitle
         margin 0
         font 32px/38px 'Cera Pro Bold', sans-serif
@@ -36,13 +50,18 @@
     &__current
         color red
         font 18px/1 'Cera Pro Medium', sans-serif
+    &__right
+        @media (max-width 700px)
+           width 480px
+        @media (max-width 570px)
+           width 100%
     &__input
         position relative
         margin-bottom 20px
-        span
+        >span
             position absolute
             right 0
-            top 50%
+            top 40%
             transform translate(0, -50%)
             cursor pointer
             transition all 0.2s ease-in-out
@@ -55,6 +74,12 @@
         font 12px/15px "Cera Pro Regular", sans-serif
         color black
     &__input-slider
+        overflow hidden
+        position relative
+        width 100%
+        height 80px
+        >span
+            display none
         input
             box-shadow none
             border none 
@@ -62,7 +87,28 @@
             font 20px/1 'Cera Pro Bold', sans-serif
             padding-bottom 16px
             background-color white
-            width 100%
+            width 480px
+            height 50px
+            margin-bottom 0
             outline none
+            margin-right 10px
             &::placeholder
                 font 20px/1 'Cera Pro Bold', sans-serif
+            &.error
+                border-color red
+                animation shake 0.8s ease-in-out
+                color red
+                &::placeholder
+                    color red
+    &__input-wrap
+        position absolute
+        top 0
+        left 0
+        display flex
+
+        width 1500px
+
+        transition all 0.5s ease-in-out
+        
+
+        

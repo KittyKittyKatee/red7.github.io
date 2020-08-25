@@ -11,7 +11,7 @@ mixin apartments()
                     .tabs__tab(id = "tab-3") 3 комнатные
                     .tabs__tab(id = "tab-4") 4 комнатные
                 .apartments__slider
-                    .apartments__arrow
+                    .apartments__arrow.apartments__arrow--prev
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
                             <g data-name="Слой 2">
                                 <g data-name="Слой 1">
@@ -20,21 +20,270 @@ mixin apartments()
                                 </g>
                             </g>
                         </svg>
-                    .apartments__slide
-                        .apartments__content
-                            .apartments__info
-                                .apartments__row Количество комнат <span id="info-count" > 1 </span>
-                                .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
-                                .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
-                                .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
-                                .apartments__row Дизайнерская отделка
-                                    ul
-                                        li - Современный стиль
-                                        li - Неоклассический стиль
-                            button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
-                        .apartments__img
-                            img(src = "../assets/images/1.png")
-                    .apartments__arrow
+                    .apartments__slides.active(id = "tab-1")
+                        .apartments__slider-wrap
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                    .apartments__slides(id = "tab-2")
+                        .apartments__slider-wrap
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 2 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                    .apartments__slides(id = "tab-3")
+                        .apartments__slider-wrap
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 3 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                    .apartments__slides(id = "tab-4")
+                        .apartments__slider-wrap
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 4 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                            .apartments__slide-wrap
+                                .apartments__slide
+                                    .apartments__content
+                                        .apartments__info
+                                            .apartments__row Количество комнат <span id="info-count" > 1 </span>
+                                            .apartments__row Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span>
+                                            .apartments__row Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span>
+                                            .apartments__row Высота потолком <span><span id="info-height"> 3.2 </span> м</span>
+                                            .apartments__row Дизайнерская отделка
+                                                ul
+                                                    li - Современный стиль
+                                                    li - Неоклассический стиль
+                                        button.apartments__btn.btn-with-arrow.btn-with-arrow--red Получить персональное предложение <span><img src="../assets/images/arrow-right.png"/></span>
+                                    .apartments__img
+                                        img(src = "../assets/images/1.png")
+                    .apartments__arrow.apartments__arrow--next
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
                             <g data-name="Слой 2">
                                 <g data-name="Слой 1">

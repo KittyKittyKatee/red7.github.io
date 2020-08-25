@@ -2,6 +2,20 @@
     background-color dark-bg
     padding-top 202px
     padding-bottom 50px
+    &__wrap
+        padding 0 20px 0
     &__main
         display flex
         justify-content space-between
+        @media(max-width 768px)
+            flex-direction column
+    &__title
+        margin-right 30px
+        @media(max-width 1040px)
+           font-size 42px
+        @media(max-width 768px)
+            margin-bottom 30px
+
+            font-size 60px
+        @media(max-width 520px)
+            font-size 40px

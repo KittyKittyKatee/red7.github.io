@@ -1,0 +1,15 @@
+{
+    "one-room": [
+        {
+            "id": 1,
+            "count": "1",
+            "area": "56",
+            "price": 10.3,
+            "height": 3.2
+        }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
