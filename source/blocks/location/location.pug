@@ -1,18 +1,18 @@
 mixin location()
-    .location
+    .location(id="location")
         .location__wrap.wrap
             .location__top
                 h2.location__title.title-2 Расположение
                     span.title-2__num 01
                 .location__quote.quote
-                    img(src="../assets/images/quote-1.svg")
+                    svg: use(xlink:href="../../assets/sprites.svg#quote-1")
                     p <b> RED7 </b>- это современный конструктивизм, совершенно необычное здание для Москвы. Рядом Центрсоюз, построенный Ле Корбюзье, Минсельхоз Щусева. Все это создает ансамбль целостности места.
-                    img(src="../assets/images/quote-2.svg")
+                    svg: use(xlink:href="../../assets/sprites.svg#quote-2")
                     span.quote__autor ОЛЕГ КЛОДТ   /   АРХИТЕКТУРНОЕ БЮРО ОЛЕГА КЛОДТА
             .location__main
                 .location__advs
                     .location__elem
-                        img(src="../assets/images/icons-1/1.svg")
+                        svg.icon-location-1: use(xlink:href="../../assets/sprites.svg#location-1")
                         .location__content
                             h4.location__subtitle.subtitle 2,4 км до Кремля
                     .location__elem
@@ -27,4 +27,6 @@ mixin location()
                     button.location__btn.btn-with-arrow Перейти по карте <span><img src="../assets/images/arrow-right.png"/></span>
                 .location__img
                     span.location__circle: span RED7
-                    img(src="../assets/images/big-pin.png")
+                    picture
+                        source(srcset="../assets/images/webp/big-pin.webp" type="image/webp")
+                        img(src="../assets/images/big-pin.png")

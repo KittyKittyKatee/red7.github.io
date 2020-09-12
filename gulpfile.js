@@ -3,12 +3,13 @@ const stylus = require('gulp-stylus');
 const pug = require('gulp-pug');
 const autoprfixer = require('autoprefixer');
 const postcss = require('gulp-postcss');
+const babel = require('gulp-babel');
 
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglifyjs');
+const uglify = require('uglify-js-es6').default;
 const cache = require('gulp-cache');
 const pngquant = require('imagemin-pngquant');
 const imagemin = require('gulp-imagemin');
@@ -65,14 +66,13 @@ gulp.task('chart', () => {
  * task for processing .js files
  */
 gulp.task('scripts', () => {
-    return gulp.src(['./source/blocks/**/*.js',
+    return gulp.src(['node_modules/babel-polyfill/dist/polyfill.js', './source/blocks/**/*.js',
             './source/assets/js/*.js'
         ])
         .pipe(concat('libs.min.js'))
-        .pipe(uglify())
+        .pipe(babel({presets: ["@babel/preset-env"]}))
         .pipe(gulp.dest('./public/assets/js'))
 });
-
 /**
  * task for images
  */
@@ -99,7 +99,7 @@ gulp.task('watch', ['browser-sync', 'pages', 'styles', 'scripts', 'images', 'fon
     gulp.watch(['./source/**/*.styl', './source/styles/*.styl'], ['styles', browserSync.reload]);
     gulp.watch('./source/blocks/**/*.pug', ['pages', browserSync.reload]);
     gulp.watch('./source//blocks/**/*.js', ['scripts', browserSync.reload]);
-    gulp.watch('./source/assets/images*', ['images']);
+    gulp.watch('./source/assets/images/*', ['images']);
 });
 
 gulp.task('default', ['pages', 'styles', 'images', 'fonts', 'scripts', 'jquery', 'chart', 'watch']);

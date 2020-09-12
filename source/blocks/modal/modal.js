@@ -2,25 +2,59 @@ $(function() {
     $("#tel").mask("+7(999) 999-9999");
     $("#tel-2").mask("+7(999) 999-9999");
 
+    const ajaxSend = (url, formData) => {
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', 
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => alert('Успешно отправлено'))
+            .catch(error => console.error(error))
+    };
+   
+
     $('.modal__form').submit(function(e){
+        
         e.preventDefault();
 
-        var name = $('[name="name"]').val().trim()
-        var tel = $('[name="tel"]').val().trim()
+        let name = $('[name="name"]');
+        name.val(name.val().trim());
+        let tel = $('[name="tel"]')
 
-        if(name.length < 3) {
-            $('[name="name"]').addClass('error')
-            $('[name="name"]').one('focus', function(e){
-                $('[name="name"]').removeClass('error')
+        if(name.val().length < 3) {
+            name.addClass('error')
+            name.one('focus', function(e){
+                name.removeClass('error')
             })
+            return false
+        } else if(tel.val().length < 12) {
+            tel.addClass('error')
+            tel.one('focus', function(){
+                tel.removeClass('error')
+            })
+            return false
         }
 
-        var form = $('#modal__form')[0]
-        var data = new FormData(form)
-        $('.modal__form').serialize()
+        let form = $('#modal__form')[0];
+        let formData = new FormData(form);
+        formData = Object.fromEntries(formData);
+        let url = 'http://localhost:3000/request';
+        ajaxSend(url, formData);
+        form.reset();
+
+        // $.ajax({
+        //     url: 'http://localhost:3000/request',
+        //     method: 'POST',
+        //     data: formData,
+
+        // }).done(function(data){
+        //     console.log('окей')
+        // })
     })
 
-    var modalContent = [
+    const modalContent = [
         {
             id: 1,
             title: 'Запишитесь на просмотр',
@@ -42,7 +76,7 @@ $(function() {
     ];
 
     function openModal(id){
-        var content = $.grep(modalContent, function(item){
+        const content = $.grep(modalContent, function(item){
             return id == item.id
         })[0]
         $('.modal__title').text(content.title)
@@ -61,6 +95,7 @@ $(function() {
 
     $('.modal__close').click(function(){
         $('.modal').fadeOut();
+        $('input').val('');
     })
 })
 

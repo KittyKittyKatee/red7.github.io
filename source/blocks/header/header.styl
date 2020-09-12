@@ -2,30 +2,84 @@
     position absolute
     top 0
     left 0
-    width 100%
     z-index 10
+
+    width 100%
     &__wrap
         display flex
         justify-content space-between
+    &__fixed
+        display none
+        position fixed
+        top 0
+        left 0
+        z-index 400
+
+        width 100%
+        height 110px
+
+        margin 0
+        padding 0 60px
+        box-sizing border-box
+
+        background-color dark-gray
+        .header__main
+            height 110px
+            
+            margin-right 0
+        .header__body
+            display flex
+            justify-content space-between
+            align-items center
+        @media(max-width 1654px)
+            opacity 0
+    &__logo-mobile
+        width 79px
+        height 40px
+        svg
+            width 79px
+            height 40px
     &__logo
         width 195px
         height 273px
-        img
+        svg
             width 195px
             height 273px
-            @media(max-width 550px)
-                width auto
-                height 150px
+            @media(max-width 700px)
+                width 120px
+                height 169px
+    nav
+        @media(max-width 1654px)
+            display none
+            position fixed
+            top 0
+            left 0
+
+            width 100vw
+            height 100vh
+
+            margin 0
+
+            background-color bg 
     &__menu 
         list-style: none
         display: flex
         margin-right 5vw
-        @media(max-width 1775px)
-            display none
+        @media(max-width 1654px)
+            flex-direction column
+            align-items center
+            justify-content center
+
+            width 100vw
+            height 100vh
+
+            margin 0
     &__main
         display flex
         align-items center
+
         height 175px
+
         margin-right 60px
     &__elem
         margin-right 50px
@@ -33,47 +87,123 @@
             margin-right 0
         @media(max-width 1775px)
             margin-right 40px
+        @media(max-width 1654px)
+            margin 0
+            margin-bottom 36px
+        @media(max-width 600px)
+           margin-bottom 24px
     &__link
+        position relative
+
         text-decoration none
         font 20px/24px 'Cera Pro Bold', sans-serif;
         color white
+
         transition all 0.3s ease-in-out
+        cursor pointer
         &:hover, &:active
             color red
             transform translate(-2px, 2px)
+            &::before
+                border-bottom: 2px dashed red
         @media(max-width 1775px)
             font-size 18px
+        @media(max-width 600px)
+            font-size 14px
+        &::before
+            content: ''
+
+            position: absolute
+            bottom: -2px
+            width: 100%
+            height: 1px
+            
+            border-bottom: 2px dashed white
+
+            opacity 0
+            transition all 0.3s ease-in-out
+            @media(max-width 1654px)
+                opacity 1
     &__call
         display flex
         flex-direction column
         align-items flex-end
-        @media(max-width 550px)
+        @media(max-width 620px)
             display none
     &__phone
+        margin-bottom 8px
+
         font 30px/1 'Cera Pro Bold', sans-serif;
         color white
-        margin-bottom 8px
         text-decoration none
+
+        transition all 0.3s ease-in-out
+        &:hover, &:active
+            color red
     &__button-call
+        padding 2px 4px
+
         text-decoration none
         font 13px/1 'Cera Pro Bold', sans-serif;
         color white
-        background-color red
         text-transform uppercase
-        padding 2px 4px
         letter-spacing 1px
+
+        background-color red
+    &__burger-place
+        display none
+
+        width 60px
+        height 50px
+
+        margin-left 50px
+        @media(max-width 1654px)
+            display block
     &__burger 
-        display flex
         flex-direction column
         justify-content space-between
+        display none
+        position fixed
+        top 55px
+        right 60px
+        
+        margin-left 50px
+        margin-top 10px
+
         cursor pointer
+        @media(max-width 1654px)
+            display flex
+        @media(max-width 620px)
+            right 30px
+            top 30px
         span
-            width 20px
-            height 2px
-            background black
-            margin-bottom 3px
-            transition all 0.2s
-        &:hover, &:active
-            opacity .5
+            width 60px
+            height 5px
+
+            margin-bottom 12px
+
+            background-color white
+            transition all 0.3s ease-in-out
+            @media(max-width 620px)
+                width 40px
+                height 4px
+
+                margin-bottom 8px
+        &:hover
+            span
+                background-color red
+        &.close
+            span
+                &:nth-child(1)
+                    transform rotate(45deg) translate(13px, 11px)
+                    @media(max-width 620px)
+                        transform rotate(45deg) translate(9px, 8px)
+                &:nth-child(2)
+                    transform rotate(-45deg)
+                &:nth-child(3)
+                    transform rotate(45deg) translate(-13px, -11px)
+                    opacity 0
+                    @media(max-width 620px)
+                        transform rotate(45deg) translate(-9px, -8px)
     &__button
         margin-right 30px

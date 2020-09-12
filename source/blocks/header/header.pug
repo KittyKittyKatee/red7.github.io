@@ -1,21 +1,43 @@
 mixin header()
     header.header
-        div.header__wrap
-            a.header__logo(href="#"): img(src="../assets/images/logo.svg")
-            div.header__main
+        .header__wrap
+            a.header__logo(href="#")
+                <svg class="inline-svg-icon">
+                    <use xlink:href="../../assets/sprites.svg#logo-5"></use>
+                </svg>
+            .header__main
                 nav: ul.header__menu
-                        li.header__elem: a(href="").header__link Расположение
-                        li.header__elem: a(href="").header__link Архитектура
-                        li.header__elem: a(href="").header__link Апартаменты
-                        li.header__elem: a(href="").header__link Отделка
-                        li.header__elem: a(href="").header__link Технологии
-                        li.header__elem: a(href="").header__link Инфраструктура
-                        li.header__elem: a(href="").header__link Контакты
+                    li.header__elem: a(data-link="location").header__link Расположение
+                    li.header__elem: a(data-link="architecture").header__link Архитектура
+                    li.header__elem: a(data-link="apartments").header__link Апартаменты
+                    li.header__elem: a(data-link="interiors").header__link Отделка
+                    li.header__elem: a(data-link="technology").header__link Технологии
+                    li.header__elem: a(data-link="infrastructure").header__link Инфраструктура
+                    li.header__elem: a(data-link="contacts").header__link Контакты
                 .header__call
                     a.header__phone(href="tel:+74953207717") +7 (495) 320-77-17   
                     a.header__button-call заказать звонок
-                //- .header__burger
-                //-     - var n = 0;
-                //-     while n < 3
-                //-         - n++
-                //-         span
+                .header__burger-place
+                .header__burger
+                    - var n = 0;
+                    while n < 3
+                        - n++
+                        span
+        .header__fixed
+            .header__body
+                a.header__logo-mobile(href="#")
+                    <svg class="inline-svg-icon">
+                        <use xlink:href="../../assets/sprites.svg#logo-mobile"></use>
+                    </svg>
+                .header__main
+                    nav: ul.header__menu
+                        li.header__elem: a(data-link="location").header__link Расположение
+                        li.header__elem: a(data-link="architecture").header__link Архитектура
+                        li.header__elem: a(data-link="apartments").header__link Апартаменты
+                        li.header__elem: a(data-link="interiors").header__link Отделка
+                        li.header__elem: a(data-link="technology").header__link Технологии
+                        li.header__elem: a(data-link="infrastructure").header__link Инфраструктура
+                        li.header__elem: a(data-link="contacts").header__link Контакты
+                    .header__call
+                        a.header__phone(href="tel:+74953207717") +7 (495) 320-77-17
+                    .header__burger-place
