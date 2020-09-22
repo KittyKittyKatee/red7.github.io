@@ -72,11 +72,16 @@ h1, h2, h3, p
             top 8px
             left 30px
 
-.btn-with-arrow-simple
-    button-arrow-simple(white, red)
-
 .btn-with-arrow
-    button-arrow(white, #333335)
+    button-arrow(white, red, white)
+    box-shadow 0 0 0 0 rgba(240, 24, 23, 1)
+    &:hover
+        animation pulse 0.8s cubic-bezier(.36,.07,.19,.97)
+
+.btn-with-black
+    button-arrow(white, #333335, red)
+.btn-white
+    button-white(#333335, white, red)
 
 @keyframes pulse {
 	0% {

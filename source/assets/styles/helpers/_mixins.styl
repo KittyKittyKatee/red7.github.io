@@ -46,37 +46,8 @@ button(color)
     animation pulse 0.8s cubic-bezier(.36,.07,.19,.97)
  
 
-button-arrow-simple(color, bg)
-  font 20px/1 'Cera Pro Bold', sans-serif;
-  letter-spacing 0.03em
-  color color
-  height 80px
-  padding 0 18px 1px 18px
-  min-width 330px
-  background-color bg
-  cursor pointer
-  text-align center
-  display flex
-  justify-content center
-  align-items center
-  box-shadow none
-  appearance none
-  border none
-  transition all 0.2s
-  span 
-    width 19px
-    height 19px
-    background-color white
-    display flex
-    justify-content center
-    align-items center
-    margin-left 10px
-    i 
-      width 50%
-      height 50%
-      background url(../../assets/images/arrow-right-black.png) no-repeat
 
-button-arrow(color, bg)
+button-arrow(color, bg, arrow)
   font 20px/1 'Cera Pro Bold', sans-serif;
   letter-spacing 0.03em
   color color
@@ -93,6 +64,7 @@ button-arrow(color, bg)
   appearance none
   border none
   transition all 0.3s ease-in-out
+  box-shadow 0 0 0 0 rgba(240, 24, 23, 1)
   &:hover
     background-color red
     color white
@@ -100,11 +72,11 @@ button-arrow(color, bg)
       background-color white
     i
       background url(../../assets/images/arrow-right-black.png) no-repeat
-      margin-left 2px
+      margin-left 4px
   span 
     width 19px
     height 19px
-    background-color red
+    background-color arrow
     display flex
     justify-content center
     align-items center
@@ -113,7 +85,14 @@ button-arrow(color, bg)
     i 
       width 50%
       height 50%
-      background url(../../assets/images/arrow-right.png) no-repeat
+      background url(../../assets/images/arrow-right-black.png) no-repeat
       transition all 0.3s ease-in-out
-      margin-left 2px
+      margin-left 4px
 
+button-white(color, bg, arrow)
+  button-arrow(color, bg, arrow)
+  span 
+    i 
+      width 50%
+      height 50%
+      background url(../../assets/images/arrow-right.png) no-repeat
