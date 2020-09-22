@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>RED7</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__wrap wrap">
+        <button class="modal__close"><svg class="svg-icon close" xmlns="http://www.w3.org/2000/svg" width="16.9" height="16.9" viewBox="0 0 16.9 16.9">
+<polygon points="16.9,2.3 14.6,0 8.4,6.2 2.3,0 0,2.3 6.2,8.4 0,14.6 2.3,16.9 8.4,10.7 8.4,10.7 8.5,10.7 14.6,16.9 16.9,14.6 10.7,8.4 "></polygon>
+</svg>
+        </button>
+        <h2 class="modal__title">Закажите звонок</h2>
+        <p class="modal__text">Наш менеджер свяжется с вами в ближайшее время</p>
+        <form class="modal__form" method="POST" id="modal__form">
+          <input name="name" type="text" placeholder="Ваше имя"/>
+          <input id="tel" name="tel" placeholder="Ваш телефон" type="text"/>
+          <button class="modal__btn btn-big" type="submit">Позвоните мне</button>
+          <div class="modal__agree"><span class="offer__checkbox"><img/></span> Нажимая кнопку <span class="modal__modal-name"> "ПОЗВОНИТЕ МНЕ" </span>, я даю своё согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 года №152‑ФЗ "О персональных данных", на условиях и для целей, определённых в Согласии на обработку персональных данных.</div>
+        </form>
+      </div>
+      <div class="modal__bg"></div>
+    </div>
+    <header class="header">
+      <div class="header__wrap"><a class="header__logo" href="#"><svg class="inline-svg-icon">
+<use xlink:href="../../assets/sprites.svg#logo-5"></use>
+</svg></a>
+        <div class="header__main">
+          <nav>
+            <ul class="header__menu">
+              <li class="header__elem"><a class="header__link" data-link="location">Расположение</a></li>
+              <li class="header__elem"><a class="header__link" data-link="architecture">Архитектура</a></li>
+              <li class="header__elem"><a class="header__link" data-link="apartments">Апартаменты</a></li>
+              <li class="header__elem"><a class="header__link" data-link="interiors">Отделка</a></li>
+              <li class="header__elem"><a class="header__link" data-link="technology">Технологии</a></li>
+              <li class="header__elem"><a class="header__link" data-link="infrastructure">Инфраструктура</a></li>
+              <li class="header__elem"><a class="header__link" data-link="contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__call"><a class="header__phone" href="tel:+74953207717">+7 (495) 320-77-17   </a><a class="header__button-call">заказать звонок</a></div>
+          <div class="header__burger-place"></div>
+          <div class="header__burger"><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header__fixed">
+        <div class="header__body"><a class="header__logo-mobile" href="#"><svg class="inline-svg-icon">
+<use xlink:href="../../assets/sprites.svg#logo-mobile"></use>
+</svg></a>
+          <div class="header__main">
+            <nav>
+              <ul class="header__menu">
+                <li class="header__elem"><a class="header__link" data-link="location">Расположение</a></li>
+                <li class="header__elem"><a class="header__link" data-link="architecture">Архитектура</a></li>
+                <li class="header__elem"><a class="header__link" data-link="apartments">Апартаменты</a></li>
+                <li class="header__elem"><a class="header__link" data-link="interiors">Отделка</a></li>
+                <li class="header__elem"><a class="header__link" data-link="technology">Технологии</a></li>
+                <li class="header__elem"><a class="header__link" data-link="infrastructure">Инфраструктура</a></li>
+                <li class="header__elem"><a class="header__link" data-link="contacts">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__call"><a class="header__phone" href="tel:+74953207717">+7 (495) 320-77-17</a></div>
+            <div class="header__burger-place"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__wrap">
+        <div class="banner__content"> 
+          <h1 class="banner__title title-1">Роскошная жизнь <br> в доме на Садовом</h1>
+          <h3 class="banner__subtitle">От 400 000 руб. м. кв.</h3>
+          <button class="banner__btn btn-big">Записаться на просмотр</button>
+        </div>
+      </div>
+      <div class="banner__slider">
+        <picture class="banner__slide">
+          <source srcset="../assets/images/webp/1.webp" type="image/webp"/><img src="../assets/images/1.jpg"/>
+        </picture>
+        <picture class="banner__slide">
+          <source srcset="../assets/images/webp/2.webp" type="image/webp"/><img src="../assets/images/2.jpg"/>
+        </picture>
+      </div>
+    </section>
+    <div class="location" id="location">
+      <div class="location__wrap wrap">
+        <div class="location__top">
+          <h2 class="location__title title-2">Расположение<span class="title-2__num">01</span></h2>
+          <div class="location__quote quote">
+            <svg>
+              <use xlink:href="../../assets/sprites.svg#quote-1"></use>
+            </svg>
+            <p><b> RED7 </b>- это современный конструктивизм, совершенно необычное здание для Москвы. Рядом Центрсоюз, построенный Ле Корбюзье, Минсельхоз Щусева. Все это создает ансамбль целостности места.</p>
+            <svg>
+              <use xlink:href="../../assets/sprites.svg#quote-2"></use>
+            </svg><span class="quote__autor">ОЛЕГ КЛОДТ   /   АРХИТЕКТУРНОЕ БЮРО ОЛЕГА КЛОДТА</span>
+          </div>
+        </div>
+        <div class="location__main">
+          <div class="location__advs">
+            <div class="location__elem">
+              <svg class="icon-location-1">
+                <use xlink:href="../../assets/sprites.svg#location-1"></use>
+              </svg>
+              <div class="location__content">
+                <h4 class="location__subtitle subtitle">2,4 км до Кремля</h4>
+              </div>
+            </div>
+            <div class="location__elem"><img src="../assets/images/icons-1/loc-2.png"/>
+              <div class="location__content">
+                <h4 class="location__subtitle subtitle">10 минут</h4>
+                <p>от центрального рынка <br> с ресторанами и свежими продуктами</p>
+              </div>
+            </div>
+            <div class="location__elem"><img src="../assets/images/icons-1/loc-3.png"/>
+              <div class="location__content">
+                <p>В шаговой доступности Чистые пруды, <br> Цветной и Сретенский бульвары, <br> Сад «Аптекарский город»</p>
+              </div>
+            </div>
+            <button class="location__btn btn-white">Перейти по карте <span><i></i></span></button>
+          </div>
+          <div class="location__img"><span class="location__circle"><span>RED7</span></span>
+            <picture>
+              <source srcset="../assets/images/webp/big-pin.webp" type="image/webp"/><img src="../assets/images/big-pin.png"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="architecture" id="architecture">
+      <div class="architecture__wrap wrap">
+        <div class="architecture__main">
+          <h2 class="architecture__title title-2">Архитектура<span class="title-2__num">02</span></h2>
+          <div class="architecture__quote quote">
+            <svg>
+              <use xlink:href="../../assets/sprites.svg#quote-1"></use>
+            </svg>
+            <p>«Модный, дерзкий, ошеломляющий дом <b> RED7 </b> приковывает к себе внимание яркой индивидуальностью, выходит за рамки привычного пространства и времени и существует сразу в семи измерениях».</p>
+            <svg>
+              <use xlink:href="../../assets/sprites.svg#quote-2"></use>
+            </svg><span class="quote__autor">MVRDV   /    АРХИТЕКТУРНОЕ БЮРО</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="benefits__wrap">
+        <div class="benefits__slider slider">
+          <div class="slider__slide">
+            <div class="slider__imgs">
+              <div class="slider__img">
+                <picture>
+                  <source srcset="../assets/images/webp/slider_2-1.webp" type="image/webp"/><img src="../assets/images/slider_2-1.jpg"/>
+                </picture>
+              </div>
+              <div class="slider__img">
+                <picture>
+                  <source srcset="../assets/images/webp/slider_2-2.webp" type="image/webp"/><img src="../assets/images/slider_2-2.jpg"/>
+                </picture>
+              </div>
+              <div class="slider__img">
+                <picture>
+                  <source srcset="../assets/images/webp/slider_2-1.webp" type="image/webp"/><img src="../assets/images/slider_2-1.jpg"/>
+                </picture>
+              </div>
+              <div class="slider__img">
+                <picture>
+                  <source srcset="../assets/images/webp/slider_2-2.webp" type="image/webp"/><img src="../assets/images/slider_2-2.jpg"/>
+                </picture>
+              </div>
+            </div>
+            <div class="slider__content">
+              <div class="slider__arrow slider__arrow--prev"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" fill="#fff" height="100"></rect>
+<path d="M45.48,42.25a.77.77,0,0,1,1.1,0,.77.77,0,0,1,0,1.08l-5.91,5.9H61.21A.76.76,0,0,1,62,50a.77.77,0,0,1-.77.78H40.67l5.91,5.89a.77.77,0,1,1-1.1,1.09l-7.23-7.21a.75.75,0,0,1,0-1.08Z"></path>
+</g>
+</g>
+</svg>
+              </div>
+              <div class="slider__info"><span class="slider__counter"><font class="slider__counter--large"> </font> <font class="slider__counter--small"></font></span>
+                <p class="slider__text"></p>
+              </div>
+              <div class="slider__arrow slider__arrow--next"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" height="100" fill="#fff" transform="translate(100 100) rotate(-180)"></rect>
+<path d="M61.75,49.46a.75.75,0,0,1,0,1.08l-7.23,7.21a.77.77,0,0,1-1.1-1.09l5.91-5.89H38.79A.77.77,0,0,1,38,50a.76.76,0,0,1,.77-.76H59.33l-5.91-5.9a.77.77,0,0,1,0-1.08.77.77,0,0,1,1.1,0Z"></path>
+</g>
+</g>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="apartments" id="apartments">
+      <div class="apartments__wrap wrap">
+        <h2 class="apartments__title title-2">Апартаменты<span class="title-2__num">03</span></h2>
+        <p class="apartments__text">Площадь апартаментов варьируется от от 27 м2 до 253 м2. <br> Возможно расширение площади за счет объединения соседних апартаментов.</p>
+        <div class="apartments__main">
+          <div class="apartments__tabs tabs">
+            <div class="tabs__tab active" id="tab-1">студии</div>
+            <div class="tabs__tab" id="tab-2">2 комнатные</div>
+            <div class="tabs__tab" id="tab-3">3 комнатные</div>
+            <div class="tabs__tab" id="tab-4">4 комнатные</div>
+          </div>
+          <div class="apartments__slider">
+            <div class="apartments__arrow apartments__arrow--prev"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" fill="#fff" height="100"></rect>
+<path d="M45.48,42.25a.77.77,0,0,1,1.1,0,.77.77,0,0,1,0,1.08l-5.91,5.9H61.21A.76.76,0,0,1,62,50a.77.77,0,0,1-.77.78H40.67l5.91,5.89a.77.77,0,1,1-1.1,1.09l-7.23-7.21a.75.75,0,0,1,0-1.08Z"></path>
+</g>
+</g>
+</svg>
+            </div>
+            <div class="apartments__slides active" id="tab-1">
+              <div class="apartments__slider-wrap">
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-1.webp" type="image/webp"/><img src="../assets/images/1.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartments__slides" id="tab-2">
+              <div class="apartments__slider-wrap">
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 2 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartments__slides" id="tab-3">
+              <div class="apartments__slider-wrap">
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 3 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartments__slides" id="tab-4">
+              <div class="apartments__slider-wrap">
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 4 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="apartments__slide-wrap">
+                  <div class="apartments__slide">
+                    <div class="apartments__content">
+                      <div class="apartments__info">
+                        <div class="apartments__row">Количество комнат <span id="info-count" > 1 </span></div>
+                        <div class="apartments__row">Площади <span>до <span id="info-area"> 1 </span> м<sup>2</sup> </span></div>
+                        <div class="apartments__row">Стоимость <span>от <span id="info-area"> 10,3 </span>млн.руб</span></div>
+                        <div class="apartments__row">Высота потолком <span><span id="info-height"> 3.2 </span> м</span></div>
+                        <div class="apartments__row">Дизайнерская отделка
+                          <ul>
+                            <li>- Современный стиль</li>
+                            <li>- Неоклассический стиль</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="apartments__btn btn-with-arrow btn-with-arrow--red">Получить персональное предложение <span><i></i></span></button>
+                    </div>
+                    <div class="apartments__img">
+                      <picture>
+                        <source srcset="../assets/images/webp/apart-2.webp" type="image/webp"/><img src="../assets/images/2.png"/>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartments__arrow apartments__arrow--next"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" height="100" fill="#fff" transform="translate(100 100) rotate(-180)"></rect>
+<path d="M61.75,49.46a.75.75,0,0,1,0,1.08l-7.23,7.21a.77.77,0,0,1-1.1-1.09l5.91-5.89H38.79A.77.77,0,0,1,38,50a.76.76,0,0,1,.77-.76H59.33l-5.91-5.9a.77.77,0,0,1,0-1.08.77.77,0,0,1,1.1,0Z"></path>
+</g>
+</g>
+</svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="interiors" id="interiors">
+      <div class="interiors__wrap wrap">
+        <div class="interiors__main">
+          <h2 class="interiors__title title-2">Интерьеры от <br> актуальных <br> европейских <br> дизайнеров<span class="title-2__num">04</span></h2>
+          <div class="interiors__quote quote">
+            <svg>
+              <use xlink:href="../../assets/sprites.svg#quote-1"></use>
+            </svg>
+            <p>Мы изучали культурные коды Москвы, окружение проекта и контекст времени, что позволило сделать наши интерьеры органичным продолжением здания. Руководствуясь умным дизайном, были найдены оптимальные решения для всех зон в доме, чтобы сделать пространство объемным и приятным для жизни.</p>
+            <svg>
+              <use xlink:href="../../assets/sprites.svg#quote-2"></use>
+            </svg><span class="quote__autor">ЯСПАР ЯНСЕН И ЯРУН ДЕЛЛЕНСЕН   |    БЮРО АРХИТЕКТУРЫ ИНТЕРЬЕРА I29</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="interiors-slider">
+      <div class="interiors-slider__wrap">
+        <div class="interiors-slider__main slider">
+          <div class="slider__slide">
+            <div class="slider__imgs">
+              <picture>
+                <source srcset="../assets/images/webp/interior-1.webp" type="image/webp"/><img src="../assets/images/interior-1.jpg"/>
+              </picture>
+              <picture>
+                <source srcset="../assets/images/webp/interior-2.webp" type="image/webp"/><img src="../assets/images/interior-2.jpg"/>
+              </picture>
+              <picture>
+                <source srcset="../assets/images/webp/interior-3.webp" type="image/webp"/><img src="../assets/images/interior-3.jpg"/>
+              </picture>
+              <picture>
+                <source srcset="../assets/images/webp/interior-4.webp" type="image/webp"/><img src="../assets/images/interior-4.jpg"/>
+              </picture>
+            </div>
+            <div class="slider__content">
+              <div class="slider__arrow slider__arrow--prev"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" fill="#fff" height="100"></rect>
+<path d="M45.48,42.25a.77.77,0,0,1,1.1,0,.77.77,0,0,1,0,1.08l-5.91,5.9H61.21A.76.76,0,0,1,62,50a.77.77,0,0,1-.77.78H40.67l5.91,5.89a.77.77,0,1,1-1.1,1.09l-7.23-7.21a.75.75,0,0,1,0-1.08Z"></path>
+</g>
+</g>
+</svg>
+              </div>
+              <div class="slider__info"><span class="slider__counter"><font class="slider__counter--large">  </font> <font class="slider__counter--small"></font></span>
+                <p class="slider__text"></p>
+              </div>
+              <div class="slider__arrow slider__arrow--next"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" height="100" fill="#fff" transform="translate(100 100) rotate(-180)"></rect>
+<path d="M61.75,49.46a.75.75,0,0,1,0,1.08l-7.23,7.21a.77.77,0,0,1-1.1-1.09l5.91-5.89H38.79A.77.77,0,0,1,38,50a.76.76,0,0,1,.77-.76H59.33l-5.91-5.9a.77.77,0,0,1,0-1.08.77.77,0,0,1,1.1,0Z"></path>
+</g>
+</g>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="security" id="technology">
+      <div class="security__wrap wrap">
+        <h2 class="security__title title-2">Безопасность и комфорт <br> c технологией умного дома iRed<span class="title-2__num">05</span></h2>
+        <p class="security__text"><b>RED7</b> — это дом, в котором технологии работают естественно, незаметно <br> и безотказно. С момента подписания контракта Вы получите доступ <br> к приложению и сможете «управлять» своей квартирой с первых этапов строительства, а при заселении решать все вопросы с помощью смартфона.</p>
+        <ul class="security__elems">
+          <li class="security__elem security-elem">
+            <div class="security-elem__top">
+              <svg class="icon-security-1">
+                <use xlink:href="../../assets/sprites.svg#security-1"></use>
+              </svg>
+              <h4 class="security-elem__title">Безопасность обеспечивают технологии</h4>
+            </div>
+            <p class="security-elem__text">Каждый из жильцов всегда под защитой благодаря круглосуточному режиму системы идентификации, охраны и видеонаблюдения. Устанавливать и изменять настройки квартиры Вы можете удаленно через мобильное приложение iRED.</p><span class="security-elem__count">01</span>
+          </li>
+          <li class="security__elem security-elem">
+            <div class="security-elem__top">
+              <svg class="icon-security-2">
+                <use xlink:href="../../assets/sprites.svg#security-2"></use>
+              </svg>
+              <h4 class="security-elem__title">Панорамные <br> окна и повышенная <br> шумоизоляция</h4>
+            </div>
+            <p class="security-elem__text">Окна европейского производства со светопрозрачной конструкцией выполнены с применением осветленного стекла с высокой светопропускающей способностью, а качественный алюминиевый профиль позволил создать комфорт и тишину внутри дома.</p><span class="security-elem__count">02</span>
+          </li>
+          <li class="security__elem security-elem">
+            <div class="security-elem__top">
+              <svg class="icon-security-3">
+                <use xlink:href="../../assets/sprites.svg#security-3"></use>
+              </svg>
+              <h4 class="security-elem__title">Современные <br> системы очистки воды <br> и воздуха</h4>
+            </div>
+            <p class="security-elem__text">Высокотехнологичные инженерные решения и оборудование позволяют забыть о том, что здание находится в самом центре современного мегаполиса. Система вентиляции и кондиционирования воздуха программируется удаленно с помощью приложения iRED.</p><span class="security-elem__count">03</span>
+          </li>
+          <li class="security__elem security-elem">
+            <div class="security-elem__top">
+              <svg class="icon-security-4">
+                <use xlink:href="../../assets/sprites.svg#security-4"></use>
+              </svg>
+              <h4 class="security-elem__title">Автоматизация <br> услуг ЖКХ</h4>
+            </div>
+            <p class="security-elem__text">Автоматическое снятие показаний приборов учета, контроль счетов и оплаты услуг ЖКХ. Online-передача показаний счетчиков и доступ к истории показаний.</p><span class="security-elem__count">04</span>
+          </li>
+        </ul>
+        <button class="security__btn btn-with-arrow">Все возможности <span><i></i></span></button>
+      </div>
+    </div>
+    <div class="infrastructure" id="infrastructure">
+      <div class="infrastructure__wrap">
+        <div class="infrastructure__top wrap">
+          <h2 class="infrastructure__title title-2">Инфраструктура комплекса<span class="title-2__num">06</span></h2>
+          <p class="infrastructure__text">«RED7 - это трендовый дом с Небесной гостиной, которая включает различные сервисы: фитнес, ретейл, рестораны, приватные зоны с авторским ландшафтным дизайном и другое. В таком современном формате жизни уже даже не так важен размер собственной квартиры, потому что весь дом становится твоим.</p>
+        </div>
+        <div class="infrastructure__main slider">
+          <div class="slider__slide"><img src="../assets/images/slider_2-1.jpg"/>
+            <div class="slider__content">
+              <div class="slider__arrow"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" fill="#fff" height="100"></rect>
+<path d="M45.48,42.25a.77.77,0,0,1,1.1,0,.77.77,0,0,1,0,1.08l-5.91,5.9H61.21A.76.76,0,0,1,62,50a.77.77,0,0,1-.77.78H40.67l5.91,5.89a.77.77,0,1,1-1.1,1.09l-7.23-7.21a.75.75,0,0,1,0-1.08Z"></path>
+</g>
+</g>
+</svg>
+              </div>
+              <div class="slider__info"><span class="slider__counter"><font class="slider__counter--large"> 01 </font> <font class="slider__counter--small"> /4 </font></span>
+                <h4 class="slider__title">Фитнес клуб</h4>
+                <p class="slider__text">Соблюдайте свой режим тренировок в <br> фитнес-клубе с бассейном 25 м2, не выходя за территорию RED7.</p>
+                <button class="slider__btn btn-with-arrow btn-with-arrow--red">Узнать подробнее <span><img src="../assets/images/arrow-right-black.png" /></span></button>
+              </div>
+              <div class="slider__arrow"><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
+<g data-name="Слой 2">
+<g data-name="Слой 1">
+<rect class="cls-1" width="100" height="100" fill="#fff" transform="translate(100 100) rotate(-180)"></rect>
+<path d="M61.75,49.46a.75.75,0,0,1,0,1.08l-7.23,7.21a.77.77,0,0,1-1.1-1.09l5.91-5.89H38.79A.77.77,0,0,1,38,50a.76.76,0,0,1,.77-.76H59.33l-5.91-5.9a.77.77,0,0,1,0-1.08.77.77,0,0,1,1.1,0Z"></path>
+</g>
+</g>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offer">
+      <div class="offer__wrap wrap">
+        <h2 class="offer__title title-2">Роскошная жизнь <br> на Садовом<span class="title-2__num">07</span></h2>
+        <p class="offer__text">Покупка возможна в ипотеку и рассрочку. Узнайте подробнее о вариантах покупки.</p>
+        <div class="offer__form">
+          <div class="offer__left">
+            <h4 class="offer__subtitle">Получить индивидуальное <br> предложение</h4>
+            <p>Мы свяжемся с вами и уточним все детали</p>
+          </div>
+          <div class="offer__right">
+            <div class="offer__input-container">
+              <div class="offer__input">
+                <div class="offer__input-slider">
+                  <form class="offer__input-wrap">
+                    <input type="text" name="name-2" placeholder="Укажите ваше имя"/>
+                    <input type="text" name="tel-2" id="tel-2" placeholder="Укажите ваш телефон"/>
+                    <button class="offer__btn" type="submit">Позвоните мне</button>
+                  </form><span>Спасибо! <br> Наш менеджер скоро с Вами свяжется</span>
+                </div><span class="offer__submit">
+                  <svg>
+                    <use xlink:href="../../assets/sprites.svg#arrow-form"></use>
+                  </svg></span>
+              </div>
+            </div><span class="offer__count"><span class="offer__current">1 </span>  /  3</span>
+            <div class="offer__agree"><span class="offer__checkbox"><img/></span> Даю своё согласие на обработку моих персональных данных</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/libs.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+  </body>
+</html>
