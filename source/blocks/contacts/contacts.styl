@@ -1,24 +1,28 @@
 .contacts
+    position relative
+    overflow hidden
+
+    height 310px
+
     background-color bg
     padding 140px 0 170px
     &__wrap
         position relative
         z-index 5
-    &__main
-        position relative
-        &::before
-            position absolute
-            content url(../../assets/images/contacts-lines.svg)
-            top -35%
-            left 240px
-            width 475px
-            height 533px
-            opacity .1
-            z-index 0
     &__title
         color white
         font 34px/1 'Cera Pro Bold', sans-serif;
         margin-bottom 20px
+        position relative
+        &::before
+            position absolute
+            content url(../../assets/images/contacts-lines.svg)
+            top -100px
+            left -160px
+            width 475px
+            height 533px
+            opacity .1
+            z-index 0
     &__text
         color white
         font 25px/30px 'Cera Pro Regular', sans-serif
@@ -39,3 +43,16 @@
     &__btn
         width 360px
         margin-bottom 30px
+    &__map
+        position absolute
+        top 0
+        right -10px
+
+        width 50%
+        height 620px
+        @media (max-width 905px)
+            position relative
+            width 100%
+
+            margin-top 50px
+        

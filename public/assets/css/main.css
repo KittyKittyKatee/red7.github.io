@@ -1081,6 +1081,9 @@ p {
   margin-top: 45px;
 }
 .contacts {
+  position: relative;
+  overflow: hidden;
+  height: 310px;
   background-color: #2a2a2c;
   padding: 140px 0 170px;
 }
@@ -1088,23 +1091,21 @@ p {
   position: relative;
   z-index: 5;
 }
-.contacts__main {
-  position: relative;
-}
-.contacts__main::before {
-  position: absolute;
-  content: url("../../assets/images/contacts-lines.svg");
-  top: -35%;
-  left: 240px;
-  width: 475px;
-  height: 533px;
-  opacity: 0.1;
-  z-index: 0;
-}
 .contacts__title {
   color: #fff;
   font: 34px/1 'Cera Pro Bold', sans-serif;
   margin-bottom: 20px;
+  position: relative;
+}
+.contacts__title::before {
+  position: absolute;
+  content: url("../../assets/images/contacts-lines.svg");
+  top: -100px;
+  left: -160px;
+  width: 475px;
+  height: 533px;
+  opacity: 0.1;
+  z-index: 0;
 }
 .contacts__text {
   color: #fff;
@@ -1131,6 +1132,20 @@ p {
 .contacts__btn {
   width: 360px;
   margin-bottom: 30px;
+}
+.contacts__map {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 50%;
+  height: 620px;
+}
+@media (max-width: 905px) {
+  .contacts__map {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 .footer {
   display: block;
@@ -1343,6 +1358,7 @@ p {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .header__phone:hover,
 .header__phone:active {
@@ -1356,6 +1372,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #f01817;
+  cursor: pointer;
 }
 .header__burger-place {
   display: none;
@@ -2594,17 +2611,6 @@ p {
   height: 700px;
   width: 93px;
 }
-@media (max-width: 1200px) {
-  .security::before {
-    left: 350px;
-  }
-}
-@media (max-width: 768px) {
-  .security::before {
-    left: 430px;
-    top: -120px;
-  }
-}
 .security__title {
   margin-bottom: 56px;
   font-size: 60px;
@@ -2630,6 +2636,8 @@ p {
   }
 }
 .security__text {
+  position: relative;
+  z-index: 100;
   font: 22px/30px 'Cera Pro Medium', sans-serif;
   color: #fff;
   margin-bottom: 150px;

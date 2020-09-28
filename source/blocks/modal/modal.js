@@ -89,6 +89,10 @@ $(function() {
         openModal(1)
     })
 
+    $('.header__button-call').click(function(){
+        openModal(2)
+    })
+
     $('.apartments__btn').click(function(){
         openModal(3)
     })

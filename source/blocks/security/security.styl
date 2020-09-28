@@ -19,11 +19,6 @@
         
         height 700px
         width 93px
-        @media(max-width 1200px)
-            left 350px
-        @media(max-width 768px)
-            left 430px
-            top -120px
     &__title
         margin-bottom 56px
         font-size 60px
@@ -44,6 +39,8 @@
         @media(max-width 520px)
             font-size 40px
     &__text
+        position relative
+        z-index 100
         font 22px/30px 'Cera Pro Medium', sans-serif
         color white
         margin-bottom: 150px
