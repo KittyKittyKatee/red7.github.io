@@ -1,2 +1,13 @@
 mixin footer()
 	.footer
+		.footer__left
+			a.footer__logo(href="#")
+				svg: use(xlink:href="././assets/sprites.svg#logo")
+			.footer__call
+				button.footer__btn.btn-with-arrow Заказать звонок <span><i></i></span>
+		.footer__right
+			.footer__wrap
+				.footer__documents
+					i: svg: use(xlink:href="././assets/sprites.svg#documents")
+					a.footer__link(href="#"): span Документы
+				a.footer__link(href="#"): span Политика конфиденциальности
