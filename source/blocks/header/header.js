@@ -6,11 +6,13 @@ $(function() {
 
     function openMenu() {
         console.log('openMenu')
-        burger.toggleClass('close');
-        if(menu.css('display')=='none') {
-            menu.fadeIn();
-        } else {
-            menu.fadeOut();
+        if(window.innerWidth < 1654) {
+            burger.toggleClass('close');
+            if(menu.css('display')=='none') {
+                menu.fadeIn();
+            } else {
+                menu.fadeOut();
+            }
         }
     }
 
