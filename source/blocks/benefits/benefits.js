@@ -25,7 +25,7 @@ function initSlider(elem, slider, prevBtn, nextBtn, arrContent) {
     current.text(slider.slick('slickCurrentSlide') < 10 ? '0' + (slider.slick('slickCurrentSlide') + 1) : slider.slick('slickCurrentSlide'));
     content.text(arrContent[slider.slick('slickCurrentSlide')])
 
-    slider.on("afterChange", function(event, slick, currentSlide, nextSlide){
+    slider.on("afterChange", function(event, slick, currentSlide){
         current.text(currentSlide < 10 ? '0' + (currentSlide + 1) : currentSlide + 1);
         content.text(arrContent[currentSlide]);
     });

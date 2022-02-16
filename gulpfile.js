@@ -50,27 +50,13 @@ gulp.task('pages', () => {
         .pipe(gulp.dest('./public'))
 });
 
-gulp.task('jquery', () => {
-    return gulp.src(['./bower_components/jquery/dist/jquery.min.js', ])
-        .pipe(concat('jquery.min.js'))
-        .pipe(gulp.dest('./source/assets/js'))
-        .pipe(gulp.dest('./public/assets/js'))
-});
-
-gulp.task('chart', () => {
-    return gulp.src('./source/assets/js/chart.min.js')
-        .pipe(gulp.dest('./public/assets/js'))
-});
-
 /**
  * task for processing .js files
  */
 gulp.task('scripts', () => {
-    return gulp.src(['node_modules/babel-polyfill/dist/polyfill.js', './source/blocks/**/*.js',
-            './source/assets/js/*.js'
+    return gulp.src(['./source/assets/js/*.js', './source/blocks/**/*.js', ,
         ])
         .pipe(concat('libs.min.js'))
-        .pipe(babel({presets: ["@babel/preset-env"]}))
         .pipe(gulp.dest('./public/assets/js'))
 });
 /**
@@ -95,11 +81,11 @@ gulp.task('fonts', () => {
 });
 
 
-gulp.task('watch', ['browser-sync', 'pages', 'styles', 'scripts', 'images', 'fonts', 'jquery', 'chart'], () => {
+gulp.task('watch', ['browser-sync', 'pages', 'styles', 'scripts', 'images', 'fonts',], () => {
     gulp.watch(['./source/**/*.styl', './source/styles/*.styl'], ['styles', browserSync.reload]);
     gulp.watch('./source/blocks/**/*.pug', ['pages', browserSync.reload]);
     gulp.watch('./source//blocks/**/*.js', ['scripts', browserSync.reload]);
     gulp.watch('./source/assets/images/*', ['images']);
 });
 
-gulp.task('default', ['pages', 'styles', 'images', 'fonts', 'scripts', 'jquery', 'chart', 'watch']);
+gulp.task('default', ['pages', 'styles', 'images', 'fonts', 'scripts', 'watch']);

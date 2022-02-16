@@ -1,12 +1,15 @@
 $(function(){
-    var arr = [];
+    let arr = [];
     var name = null;
     var tel = null;
-    $('.offer-submit').click(function(){
+
+    $('.offer__submit').click(function(){
         var nameInput = $('[name="name-2"]')
         var telInput = $('[name="tel-2"]')
         name = nameInput.val().trim()
         tel = telInput.val().trim()
+
+        console.log(nameInput)
 
         if(arr.includes('name')) {
             if(tel.length < 12) {

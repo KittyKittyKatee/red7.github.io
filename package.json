@@ -14,12 +14,7 @@
     "author": "Kate Konovalova",
     "license": "ISC",
     "devDependencies": {
-        "@babel/core": "^7.2.0",
-        "@babel/preset-env": "^7.2.0",
         "autoprefixer": "^7.1.4",
-        "babel-core": "^6.26.3",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
         "browser-sync": "^2.18.13",
         "colors": "^1.1.2",
         "core-js": "^3.6.5",

@@ -7,9 +7,21 @@ mixin infrastructure()
                 p.infrastructure__text «RED7 - это трендовый дом с Небесной гостиной, которая включает различные сервисы: фитнес, ретейл, рестораны, приватные зоны с авторским ландшафтным дизайном и другое. В таком современном формате жизни уже даже не так важен размер собственной квартиры, потому что весь дом становится твоим.
             .infrastructure__main.slider
                 .slider__slide
-                    img(src="./assets/images/slider_2-1.jpg" alt="infrastructure-img")
+                    .slider__imgs
+                        picture
+                            img(src="./assets/images/slider_2-1.jpg" alt="infrastructure-img")
+                        picture
+                            source(srcset="./assets/images/interior-2.webp" type="image/webp")
+                            img(src = "./assets/images/interior-2.jpg" alt="interior-img")
+                        picture
+                            source(srcset="./assets/images/interior-3.webp" type="image/webp")
+                            img(src = "./assets/images/interior-3.jpg" alt="interior-img")
+                        picture
+                            source(srcset="./assets/images/interior-4.webp" type="image/webp")
+                            img(src = "./assets/images/interior-4.jpg" alt="interior-img")
+
                     .slider__content
-                        .slider__arrow
+                        .slider__arrow.slider__arrow--prev
                             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-left" viewBox="0 0 100 100">
                                 <g data-name="Слой 2">
                                     <g data-name="Слой 1">
@@ -23,7 +35,7 @@ mixin infrastructure()
                             h4.slider__title Фитнес клуб
                             p.slider__text Соблюдайте свой режим тренировок в <br> фитнес-клубе с бассейном 25 м2, не выходя за территорию RED7.
                             button.slider__btn.btn-with-arrow.btn-with-arrow--red Узнать подробнее <span><img src="../assets/images/arrow-right-black.png" /></span>
-                        .slider__arrow
+                        .slider__arrow.slider__arrow--next
                             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-right" viewBox="0 0 100 100">
                                 <g data-name="Слой 2">
                                     <g data-name="Слой 1">

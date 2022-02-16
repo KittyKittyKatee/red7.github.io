@@ -5,6 +5,7 @@ $(function() {
     const menuItem = menu.find('.header__link');
 
     function openMenu() {
+        console.log('openMenu')
         burger.toggleClass('close');
         if(menu.css('display')=='none') {
             menu.fadeIn();

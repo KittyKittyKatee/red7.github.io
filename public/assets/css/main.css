@@ -32,9 +32,9 @@ body {
   margin: 0 auto;
   color: #323233;
 }
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   body {
-    min-width: 400px;
+    min-width: 360px;
   }
 }
 h1,
@@ -2032,7 +2032,10 @@ p {
 .modal input::-webkit-input-placeholder {
   color: #fff;
 }
-.modal input:-ms-input-placeholder {
+.modal input::-moz-placeholder {
+  color: #fff;
+}
+.modal input::-ms-input-placeholder {
   color: #fff;
 }
 .modal input::placeholder {
@@ -2046,7 +2049,10 @@ p {
 .modal input.error::-webkit-input-placeholder {
   color: #f01817;
 }
-.modal input.error:-ms-input-placeholder {
+.modal input.error::-moz-placeholder {
+  color: #f01817;
+}
+.modal input.error::-ms-input-placeholder {
   color: #f01817;
 }
 .modal input.error::placeholder {
@@ -2369,7 +2375,10 @@ p {
 .offer__input-slider input::-webkit-input-placeholder {
   font: 20px/1 'Cera Pro Bold', sans-serif;
 }
-.offer__input-slider input:-ms-input-placeholder {
+.offer__input-slider input::-moz-placeholder {
+  font: 20px/1 'Cera Pro Bold', sans-serif;
+}
+.offer__input-slider input::-ms-input-placeholder {
   font: 20px/1 'Cera Pro Bold', sans-serif;
 }
 .offer__input-slider input::placeholder {
@@ -2384,7 +2393,10 @@ p {
 .offer__input-slider input.error::-webkit-input-placeholder {
   color: #f01817;
 }
-.offer__input-slider input.error:-ms-input-placeholder {
+.offer__input-slider input.error::-moz-placeholder {
+  color: #f01817;
+}
+.offer__input-slider input.error::-ms-input-placeholder {
   color: #f01817;
 }
 .offer__input-slider input.error::placeholder {
